@@ -30,18 +30,18 @@
 
 .top-menu {
     position: relative;
+    height: calc(min(585px, (100vh - 150px)) - var(--inner-padding) * 2);
     &__main {
         width: 292px;
-        max-height: calc(
-            min(682px, (100vh - 150px)) - var(--inner-padding) * 2
-        );
+        height: calc(min(585px, (100vh - 150px)) - var(--inner-padding) * 2);
         border-right: 1px solid var(--top-menu-border-color);
         overflow-y: auto;
     }
 }
 
 .menu-column {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     column-gap: 14px;
     &__icon {
         position: relative;
@@ -53,7 +53,7 @@
     &__icon-1 {
         width: 30px;
         height: 30px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     &__icon-2 {
@@ -62,7 +62,7 @@
         right: -3px;
         width: 24px;
         height: 24px;
-        object-fit: cover;
+        object-fit: contain;
         filter: var(--menu-column-icon-color);
     }
 
@@ -78,10 +78,15 @@
     }
 
     &__item {
-        &:hover .sub-menu {
+        &--active .sub-menu {
             visibility: visible;
             opacity: 1;
         }
+    }
+
+    &__item--active > &__link {
+        color: var(--menu-column-link-hover-color);
+        font-weight: 500;
     }
 
     &__item:hover > &__link {
@@ -96,6 +101,40 @@
         font-size: 1.4rem;
         line-height: 1.43;
     }
+
+    &__list--01 &__item:nth-child(1) .sub-menu,
+    &__item:nth-child(4) .sub-menu,
+    &__item:nth-child(8) .sub-menu,
+    &__item:nth-child(11) .sub-menu,
+    &__item:nth-child(14) .sub-menu {
+        &__column:nth-child(5) {
+            grid-area: 3 / 2 / 4 / 3;
+            margin-top: 40px;
+        }
+
+        &__column:nth-child(3) {
+            grid-area: 1 / 3 / 4 / 4;
+        }
+
+        &__column:nth-child(4) {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+    }
+
+    &__list--01 &__item:nth-child(3) .sub-menu,
+    &__item:nth-child(6) .sub-menu,
+    &__item:nth-child(9) .sub-menu,
+    &__item:nth-child(12) .sub-menu {
+        grid-template-rows: repeat(2, auto);
+        &__column:nth-child(5) {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        &__column:nth-child(4) {
+            grid-area: 2 / 2 / 3 / 3;
+            margin-top: -70px;
+        }
+    }
 }
 
 .sub-menu {
@@ -104,7 +143,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    row-gap: 20px;
+    row-gap: 15px;
     padding-left: 30px;
     overflow-y: auto;
     visibility: hidden;
