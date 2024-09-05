@@ -1,11 +1,18 @@
+@use "../abstracts";
+
 .dropdown {
     position: absolute;
     left: 0;
     padding-top: 50px;
     width: min(100%, 1240px);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s ease;
+    display: none;
+
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        visibility: visible;
+        opacity: 1;
+        padding-top: 0;
+    }
 
     &__inner {
         --inner-padding: 30px;
@@ -25,17 +32,42 @@
             translate: -50%;
             filter: var(--arrow-dropdown-color);
         }
+
+        @include abstracts.breakpoint(lg) {
+            padding: 0 40px;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        @include abstracts.breakpoint(sm) {
+            padding: 0 20px;
+        }
     }
 }
 
 .top-menu {
     position: relative;
     height: calc(min(585px, (100vh - 150px)) - var(--inner-padding) * 2);
+
+    @include abstracts.breakpoint(lg) {
+        height: 100%;
+    }
     &__main {
         width: 292px;
         height: calc(min(585px, (100vh - 150px)) - var(--inner-padding) * 2);
         border-right: 1px solid var(--top-menu-border-color);
         overflow-y: auto;
+
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+            height: 100%;
+            border-right: none;
+        }
     }
 }
 
@@ -43,11 +75,25 @@
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 14px;
+
+    @include abstracts.breakpoint(lg) {
+        margin-top: 0;
+    }
+
     &__icon {
         position: relative;
         flex-shrink: 0;
         width: 36px;
         height: 36px;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            display: block;
+            margin: 20px 0;
+        }
     }
 
     &__icon-1 {
@@ -71,16 +117,26 @@
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 2.25;
+
+        @include abstracts.breakpoint(lg) {
+            margin: 20px 0;
+        }
     }
 
     &__list {
         margin-top: 13px;
+        @include abstracts.breakpoint(lg) {
+            margin-top: 0;
+        }
     }
 
     &__item {
         &--active .sub-menu {
-            visibility: visible;
-            opacity: 1;
+            display: grid;
+
+            @include abstracts.breakpoint(lg) {
+                display: block;
+            }
         }
     }
 
@@ -109,7 +165,10 @@
     &__item:nth-child(14) .sub-menu {
         &__column:nth-child(5) {
             grid-area: 3 / 2 / 4 / 3;
-            margin-top: 40px;
+            margin-top: 60px;
+            @include abstracts.breakpoint(lg) {
+                margin-top: 0;
+            }
         }
 
         &__column:nth-child(3) {
@@ -143,11 +202,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    row-gap: 15px;
+    gap: 15px;
     padding-left: 30px;
     overflow-y: auto;
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     transition: 0.5s ease;
 
     &__column:nth-child(1) {
@@ -160,5 +218,11 @@
 
     &__column:nth-child(5) {
         grid-area: 2 / 3 / 4 / 4;
+    }
+
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        display: none;
+        padding-left: 0;
     }
 }
