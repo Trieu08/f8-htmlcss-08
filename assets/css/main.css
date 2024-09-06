@@ -2007,8 +2007,16 @@ html {
   background: var(--cate-item-media-bg);
   flex-shrink: 0;
 }
+@media screen and (max-width: 767.98px) {
+  .cate-item__media {
+    width: 88px;
+    height: 88px;
+  }
+}
 .cate-item__thumb {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .cate-item__title {
   color: var(--cate-item-title-color);
@@ -2016,11 +2024,21 @@ html {
   font-weight: 700;
   line-height: 1.45;
 }
+@media screen and (max-width: 767.98px) {
+  .cate-item__title {
+    font-size: 1.8rem;
+  }
+}
 .cate-item__desc {
   margin-top: 6px;
   color: var(--cate-item-desc-color);
   font-size: 1.6rem;
   line-height: 1.5;
+}
+@media screen and (max-width: 767.98px) {
+  .cate-item__desc {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 1199.98px) {
   .cate-item {

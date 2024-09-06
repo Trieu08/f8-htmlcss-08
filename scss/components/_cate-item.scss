@@ -15,10 +15,17 @@
         border-radius: 16px;
         background: var(--cate-item-media-bg);
         flex-shrink: 0;
+
+        @include abstracts.screen(md) {
+            width: 88px;
+            height: 88px;
+        }
     }
 
     &__thumb {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &__title {
@@ -26,6 +33,10 @@
         font-size: 2.2rem;
         font-weight: 700;
         line-height: 1.45;
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+        }
     }
 
     &__desc {
@@ -33,6 +44,10 @@
         color: var(--cate-item-desc-color);
         font-size: 1.6rem;
         line-height: 1.5;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
 
     @include abstracts.screen(xl) {
