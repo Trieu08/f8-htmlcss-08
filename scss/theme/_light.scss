@@ -10,7 +10,7 @@ html {
     --top-actions-separate-bg-color: #ededf6;
     --body-bg-color: #f6f6f6;
 
-    @include abstracts.breakpoint(md) {
+    @include abstracts.screen(md) {
         --header-bg-color: #fff;
         --header-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
     }
@@ -27,4 +27,10 @@ html {
     // Sidebar
     --sidebar-bg: #fff;
     --sidebar-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+
+    // Cate-item
+    --cate-item-bg: #eee;
+    --cate-item-media-bg: #fff;
+    --cate-item-title-color: #000;
+    --cate-item-desc-color: #1a162e;
 }
