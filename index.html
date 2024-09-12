@@ -30,7 +30,7 @@
         </script>
 
         <div class="container home">
-            <section class="home__container">
+            <div class="home__container">
                 <div class="slideshow">
                     <div class="slideshow__inner">
                         <div class="slideshow__item">
@@ -46,52 +46,58 @@
                         <span class="slideshow__number">5</span>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- Browse Categories -->
             <section class="home__container">
-                <h2 class="home__heading">Browse Categories</h2>
+                <div class="home__top"><h2 class="home__heading">Browse Categories</h2></div>
                 <div class="home__cate row row-col-3 row-col-md-1">
                     <!-- Item-1 -->
                     <div class="col">
                         <!-- Categories -->
-                        <article class="cate-item">
-                            <figure class="cate-item__media">
-                                <img src="./assets/img/Categories/item-1.png" alt="" class="cate-item__thumb" />
-                            </figure>
-                            <section class="cate-item__content">
-                                <span class="cate-item__title">$24 - $150</span>
-                                <p class="cate-item__desc">New sumatra mandeling coffe blend</p>
-                            </section>
-                        </article>
+                        <a href="#!">
+                            <article class="cate-item">
+                                <figure class="cate-item__media">
+                                    <img src="./assets/img/Categories/item-1.png" alt="" class="cate-item__thumb" />
+                                </figure>
+                                <div class="cate-item__content">
+                                    <h3 class="cate-item__title">$24 - $150</h3>
+                                    <p class="cate-item__desc">New sumatra mandeling coffe blend</p>
+                                </div>
+                            </article>
+                        </a>
                     </div>
 
                     <!-- Item-2 -->
                     <div class="col">
                         <!-- Categories -->
-                        <article class="cate-item">
-                            <figure class="cate-item__media">
-                                <img src="./assets/img/Categories/item-2.png" alt="" class="cate-item__thumb" />
-                            </figure>
-                            <section class="cate-item__content">
-                                <span class="cate-item__title">$37 - $160</span>
-                                <p class="cate-item__desc">Espresso arabica and robusta beans</p>
-                            </section>
-                        </article>
+                        <a href="#!">
+                            <article class="cate-item">
+                                <figure class="cate-item__media">
+                                    <img src="./assets/img/Categories/item-2.png" alt="" class="cate-item__thumb" />
+                                </figure>
+                                <div class="cate-item__content">
+                                    <h3 class="cate-item__title">$37 - $160</h3>
+                                    <p class="cate-item__desc">Espresso arabica and robusta beans</p>
+                                </div>
+                            </article>
+                        </a>
                     </div>
 
                     <!-- Item-3 -->
                     <div class="col">
                         <!-- Categories -->
-                        <article class="cate-item">
-                            <figure class="cate-item__media">
-                                <img src="./assets/img/Categories/item-3.png" alt="" class="cate-item__thumb" />
-                            </figure>
-                            <section class="cate-item__content">
-                                <h3 class="cate-item__title">$32 - $160</h3>
-                                <p class="cate-item__desc">Lavazza top class whole bean coffee blend</p>
-                            </section>
-                        </article>
+                        <a href="#!">
+                            <article class="cate-item">
+                                <figure class="cate-item__media">
+                                    <img src="./assets/img/Categories/item-3.png" alt="" class="cate-item__thumb" />
+                                </figure>
+                                <div class="cate-item__content">
+                                    <h3 class="cate-item__title">$32 - $160</h3>
+                                    <p class="cate-item__desc">Lavazza top class whole bean coffee blend</p>
+                                </div>
+                            </article>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -105,7 +111,7 @@
                         <img src="./assets/icons/filter.svg" alt="" class="filter__btn-icon icon" />
                     </button>
                 </div>
-                <div class="row row-col-4 row-col-lg-2 row-col-sm-1 g-3">
+                <div class="row row-col-4 row-col-lg-2 row-col-sm-1 gy-lg-3">
                     <!-- Product item 1-->
                     <div class="col">
                         <article class="product-item">
@@ -115,6 +121,11 @@
                                 </a>
                                 <button class="product-item__btn">
                                     <img src="./assets/icons/heart.svg" alt="" class="product-item__btn-icon icon" />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="product-item__btn-icon--liked"
+                                    />
                                 </button>
                             </figure>
                             <h3>
@@ -139,6 +150,11 @@
                                 </a>
                                 <button class="product-item__btn">
                                     <img src="./assets/icons/heart.svg" alt="" class="product-item__btn-icon icon" />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="product-item__btn-icon--liked"
+                                    />
                                 </button>
                             </figure>
                             <h3>
@@ -161,8 +177,13 @@
                                 <a href="#!">
                                     <img src="./assets/img/Products/item-3.png" alt="" class="product-item__img" />
                                 </a>
-                                <button class="product-item__btn">
+                                <button class="product-item__btn product-item__btn--liked">
                                     <img src="./assets/icons/heart.svg" alt="" class="product-item__btn-icon icon" />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="product-item__btn-icon--liked"
+                                    />
                                 </button>
                             </figure>
                             <h3>
@@ -187,6 +208,11 @@
                                 </a>
                                 <button class="product-item__btn">
                                     <img src="./assets/icons/heart.svg" alt="" class="product-item__btn-icon icon" />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="product-item__btn-icon--liked"
+                                    />
                                 </button>
                             </figure>
                             <h3>

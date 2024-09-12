@@ -33,4 +33,22 @@ html {
     --cate-item-media-bg: #fff;
     --cate-item-title-color: #000;
     --cate-item-desc-color: #1a162e;
+
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
+    }
+
+    // Product
+    --filter-btn-bg: #fff;
+    --filter-btn-color: #6c6c72;
+    --product-item-bg: #fff;
+    --product-item-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    --product-btn-bg: #fff;
+    --product-item-btn-shadow: 0px 20px 60px rgba(124, 124, 124, 0.4);
+    --product-item-title-color: #1a162e;
+    --product-item-bottom: #1a162e;
+
+    @include abstracts.screen(sm) {
+        --filter-btn-color: #1a162e;
+    }
 }

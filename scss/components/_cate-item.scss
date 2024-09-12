@@ -1,5 +1,16 @@
 @use "../abstracts";
 
+.home__cate {
+    --grid-gutter-x: 50px;
+
+    @include abstracts.screen(lg) {
+        --grid-gutter-x: 26px;
+    }
+
+    @include abstracts.screen(md) {
+        --grid-gutter-y: 20px;
+    }
+}
 .cate-item {
     display: flex;
     align-items: center;
@@ -56,6 +67,5 @@
 
     @include abstracts.screen(md) {
         flex-direction: row;
-        background: #fff;
     }
 }
