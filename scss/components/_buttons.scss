@@ -1,0 +1,36 @@
+.btn {
+    height: 46px;
+    padding: 0 20px;
+    background: #ededf6;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 6px;
+    user-select: none;
+
+    + .btn {
+        margin-left: 20px;
+    }
+
+    &--text {
+        color: #9e9da8;
+        background: transparent;
+        font-weight: 400;
+    }
+
+    &--primary {
+        background: #ffb700;
+    }
+
+    &--outline {
+        background: transparent;
+        border: 1px solid #d2d1d6;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

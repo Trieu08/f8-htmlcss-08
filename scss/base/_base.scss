@@ -31,8 +31,11 @@ button,
 input,
 textarea,
 select {
+    outline: none;
     font-family: inherit;
     color: inherit;
+    outline: none;
+    border: none;
 }
 
 .icon {

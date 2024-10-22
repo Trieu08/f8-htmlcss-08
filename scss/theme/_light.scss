@@ -51,4 +51,12 @@ html {
     @include abstracts.screen(sm) {
         --filter-btn-color: #1a162e;
     }
+
+    // Filter
+    --filter-bg: #fff;
+    --filter-heading-color: #1a162e;
+    --filter-input-border: #d2d1d6;
+    --filter-select-color: #1a162e;
+    --filter-form-tag-bg: #f8f8fb;
+    --filter-shadow: drop-shadow(0px 40px 90px rgba(200, 200, 200, 0.4));
 }
