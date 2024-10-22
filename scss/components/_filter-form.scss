@@ -111,6 +111,9 @@
         @include abstracts.screen(xl) {
             width: 100%;
         }
+        @include abstracts.screen(sm) {
+            font-size: 1.6rem;
+        }
     }
 
     &__separate {
@@ -211,6 +214,10 @@
         &::placeholder {
             color: #9e9da8;
             font-weight: 400;
+        }
+
+        @include abstracts.screen(sm) {
+            font-size: 1.6rem;
         }
     }
 
