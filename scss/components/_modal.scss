@@ -1,0 +1,88 @@
+@use "../abstracts";
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity, visibility;
+    transition-duration: 0.3s;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+        color: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    &__overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    &--small &__content {
+        width: min(450px, 100% - 40px);
+    }
+
+    &--large &__content {
+        width: min(1100px, 100% - 40px);
+    }
+
+    &--fill &__content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    &__body {
+        padding-right: 20px;
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        width: min(850px, 100% - 40px);
+
+        padding: 20px 0 20px 20px;
+        border-radius: 20px;
+        background: var(--cart-info-bg-color);
+        box-shadow: var(--cart-info-shadow);
+    }
+
+    &__text {
+        padding-right: 20px;
+        color: var(--cart-item-text-color);
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding-right: 20px;
+    }
+
+    @include abstracts.screen(md) {
+        &__btn {
+            flex: 1;
+        }
+    }
+}

@@ -11,7 +11,7 @@
     &__item {
         position: relative;
         flex-shrink: 0;
-        padding-top: 34%;
+        padding-top: 27%;
         width: 100%;
 
         @include abstracts.screen(md) {

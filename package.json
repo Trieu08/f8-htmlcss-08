@@ -8,5 +8,13 @@
     },
     "author": "",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Trieu08/f8-htmlcss-08.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Trieu08/f8-htmlcss-08/issues"
+    },
+    "homepage": "https://github.com/Trieu08/f8-htmlcss-08#readme",
     "description": ""
 }

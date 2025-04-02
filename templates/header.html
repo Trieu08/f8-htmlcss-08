@@ -6,9 +6,9 @@
         </button>
 
         <!-- Logo -->
-        <a href="./" class="logo">
-            <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
-            <h1 class="logo__text">grocerymart</h1>
+        <a href="./" class="logo top-bar__logo">
+            <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img top-bar__logo-img" />
+            <h1 class="logo__text top-bar__logo-text">grocerymart</h1>
         </a>
 
         <!-- Navbar -->
@@ -18,13 +18,13 @@
                 <img src="./assets/icons/arrow-left.svg" alt="Arrow" class="icon" />
             </button>
 
-            <a href="#!" class="nav-btn d-none d-md-flex">
+            <a href="./checkout.html" class="nav-btn d-none d-md-flex">
                 <img src="./assets/icons/buy.svg" alt="" class="nav-btn__icon icon" />
                 <span class="nav-btn__title">Card</span>
                 <span class="nav-btn__qnt">3</span>
             </a>
 
-            <a href="#!" class="nav-btn d-none d-md-flex">
+            <a href="./favorite.html" class="nav-btn d-none d-md-flex">
                 <img src="./assets/icons/heart.svg" alt="" class="nav-btn__icon icon" />
                 <span class="nav-btn__title">Favorite</span>
                 <span class="nav-btn__qnt">3</span>
@@ -4839,29 +4839,8 @@
 
         <!-- Actions -->
         <div class="top-actions">
-            <div class="top-actions__group d-md-none top-actions__group--single">
-                <button class="top-actions__btn">
-                    <img src="./assets/icons/search.svg" alt="Search" class="icon top-actions__icon" />
-                </button>
-            </div>
-
-            <div class="top-actions__group d-md-none">
-                <button class="top-actions__btn">
-                    <img src="./assets/icons/heart.svg" alt="Heart" class="icon top-actions__icon" />
-                    <span class="top-actions__text">03</span>
-                </button>
-
-                <div class="top-actions__separate"></div>
-
-                <button class="top-actions__btn">
-                    <img src="./assets/icons/buy.svg" alt="Buy" class="icon top-actions__icon" />
-                    <span class="top-actions__text">$65.42</span>
-                </button>
-            </div>
-
-            <figure class="top-actions__user">
-                <img src="./assets/img/header-avatar.jpg" alt="Avatar" class="top-actions__avatar" />
-            </figure>
+            <a href="./sign-in.html" class="btn btn--text d-md-none">Sign In</a>
+            <a href="./sign-up.html" class="top-actions__sign-up btn btn--primary">Sign Up</a>
         </div>
     </div>
 </div>

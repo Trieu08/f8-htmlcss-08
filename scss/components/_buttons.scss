@@ -1,4 +1,7 @@
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 46px;
     padding: 0 20px;
     background: #ededf6;
@@ -7,12 +10,16 @@
     border-radius: 6px;
     user-select: none;
 
+    &--small {
+        height: 40px;
+        padding: 0 16px;
+    }
+
     + .btn {
         margin-left: 20px;
     }
 
     &--text {
-        color: #9e9da8;
         background: transparent;
         font-weight: 400;
     }
@@ -30,7 +37,16 @@
         border-radius: 99px;
     }
 
+    &--danger {
+        color: #fff;
+        background: red;
+    }
+
     &:hover {
         opacity: 0.9;
+    }
+
+    &--no-margin.btn {
+        margin: 0;
     }
 }

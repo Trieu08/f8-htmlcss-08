@@ -24,6 +24,8 @@ html.dark {
     --menu-column-icon-color: brightness(0) saturate(100%) invert(99%) sepia(12%) saturate(482%) hue-rotate(80deg)
         brightness(107%) contrast(98%);
 
+    --act-dropdown-border-color: #171c28;
+
     // Sidebar
     --sidebar-bg: #292e39;
     --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
@@ -54,4 +56,61 @@ html.dark {
     --filter-arrow-up: brightness(0) saturate(100%) invert(13%) sepia(5%) saturate(3282%) hue-rotate(183deg)
         brightness(91%) contrast(85%);
     --filter-search-color: #1a162e;
+
+    // Auth
+    --auth-bg-color: #171c28;
+    --auth-content-bg: #292e39;
+    --auth-intro-bg: #171c28;
+    --auth-text-color: #b9babe;
+    --auth-text-btn-color: #b9babe;
+    --auth-icon-color: brightness(0) saturate(100%) invert(81%) sepia(0%) saturate(6013%) hue-rotate(324deg)
+        brightness(91%) contrast(96%);
+
+    // Product-page
+    --product-page-bg: #292e39;
+    --product-info-bg: #171c28;
+    --product-info-tag-bg: #292e39;
+
+    @include abstracts.screen(md) {
+        --product-page-bg: #292e39;
+        --product-container-bg: #171c28;
+        --product-info-bg: #171c28;
+    }
+
+    // Breadcrumbs
+    --breadcrumbs-bg: #171c28;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
+    --breadcrumbs-text-color: #9e9da8;
+
+    // Search bar
+    --search-bar-bg: #171c28;
+
+    // Product-tab
+    --review-card-bg: #171c28;
+
+    // Cart-info
+    --cart-info-bg-color: #171c28;
+    --cart-info-shadow: 0px 20px 60px 10px rgba(23, 28, 40, 0.2);
+    --cart-item-text-color: #b9babe;
+    --cart-info-gift-icon-color: #292e39;
+    --cart-info-gift-icon-shadow: none;
+    --cart-info-icon: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(121%) hue-rotate(191deg)
+        brightness(93%) contrast(86%);
+    --cart-item-border-input-color: #292e39;
+
+    --checkout-breadcurumbs-bg: #171c28;
+
+    // Payment
+
+    --payment-item-bg-color: #292e39;
+
+    // Profile
+    --profile-sidebar-bg-color: #171c28;
+    --profile-sidebar-shadow: 0px 20px 60px 10px rgba(23, 28, 40, 0.2);
+    --profile-user-shadow: none;
+
+    // Account-info
+    --account-info-bg-color: #292e39;
+    --account-info-icon-bg: #171c28;
+    --account-info-text-color: #b9babe;
 }

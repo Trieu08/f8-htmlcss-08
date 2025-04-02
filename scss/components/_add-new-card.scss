@@ -1,0 +1,22 @@
+.add-new-card {
+    &__heading {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__bottom {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        display: flex;
+        padding-right: 20px;
+    }
+
+    &__btn {
+        color: #1a162e;
+    }
+}

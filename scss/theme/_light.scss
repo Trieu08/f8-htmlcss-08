@@ -24,6 +24,9 @@ html {
     --menu-column-text-color: #1a162e;
     --menu-column-link-hover-color: #0071dc;
 
+    --act-dropdown-view-all-color: #0071dc;
+    --act-dropdown-border-color: #d2d1d6;
+
     // Sidebar
     --sidebar-bg: #fff;
     --sidebar-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
@@ -59,4 +62,66 @@ html {
     --filter-select-color: #1a162e;
     --filter-form-tag-bg: #f8f8fb;
     --filter-shadow: drop-shadow(0px 40px 90px rgba(200, 200, 200, 0.4));
+
+    // Auth
+    --auth-bg-color: #fafafd;
+    --auth-content-bg: #fff;
+    --auth-intro-bg: #fff;
+    --auth-intro-text-color: #1a162e;
+    --auth-text-btn-color: #1a162e;
+    --auth-icon-color: brightness(0) saturate(100%) invert(8%) sepia(7%) saturate(5465%) hue-rotate(212deg)
+        brightness(96%) contrast(96%);
+
+    // Product-page
+    --product-page-bg: #fff;
+    --product-info-bg: #f6f6f6;
+    --product-info-tag-bg: #ededf6;
+
+    @include abstracts.screen(md) {
+        --product-page-bg: #ececef;
+        --product-container-bg: #fff;
+        --product-info-bg: #fff;
+    }
+
+    // Breadcrumbs
+    --breadcrumbs-bg: #f6f6f6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+    --breadcrumbs-text-color: #9e9da8;
+
+    @include abstracts.screen(md) {
+        --breadcrumbs-bg: #fff;
+    }
+
+    // Search bar
+    --search-bar-bg: #fff;
+    @include abstracts.screen(md) {
+        --search-bar-bg: #fff;
+    }
+
+    // Product-tab
+    --review-card-bg: #fafafd;
+
+    // Cart-info
+    --cart-info-bg-color: #fff;
+    --cart-info-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    --cart-item-text-color: #1a162e;
+    --cart-info-gift-icon-color: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%),
+        #7644e1;
+    --cart-info-gift-icon-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    --cart-item-border-input-color: #d2d1d6;
+    --checkout-breadcurumbs-bg: #fff;
+
+    // Payment
+
+    --payment-item-bg-color: #f6f6f6;
+
+    // Profile
+    --profile-sidebar-bg-color: #fff;
+    --profile-sidebar-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    --profile-user-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+
+    // Account-info
+    --account-info-bg-color: #f6f6f6;
+    --account-info-icon-bg: #fff;
+    --account-info-text-color: #1a162e;
 }

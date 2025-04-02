@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,107 +114,105 @@
                         <div id="home-filter" class="filter hide">
                             <img class="filter__arrow-up" src="./assets/icons/arrow-up.png" alt="" />
                             <h3 class="filter__heading">Filter</h3>
-                            <div class="filter__row filter__content">
-                                <!--Filter column 1  -->
-                                <div class="filter__col">
-                                    <label for="" class="filter__form-label">Price</label>
-                                    <div class="filter__form-group">
-                                        <div class="filter__form-slider"></div>
-                                    </div>
-                                    <div class="filter__form-group filter__form-group--inline">
-                                        <div>
-                                            <label for="" class="filter__form-label filter__form-label--small">
-                                                Minimum
-                                            </label>
-                                            <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                value="$30.000"
-                                                class="filter__form-input"
-                                            />
+                            <form action="" class="filter__form form">
+                                <div class="filter__row filter__content">
+                                    <!--Filter column 1  -->
+                                    <div class="filter__col">
+                                        <label for="" class="form__label">Price</label>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-slider"></div>
                                         </div>
-                                        <div>
-                                            <label for="" class="filter__form-label filter__form-label--small">
-                                                Maximum
-                                            </label>
-                                            <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                value="$100.000"
-                                                class="filter__form-input"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="filter__separate"></div>
-
-                                <!--Filter column 2  -->
-                                <div class="filter__col">
-                                    <label for="" class="filter__form-label">Size/Weight</label>
-                                    <div class="filter__form-group">
-                                        <div class="filter__form-select-wrap">
-                                            <div class="filter__form-select filter__form-select-big">
-                                                500g
-                                                <img
-                                                    src="./assets/icons/select-arrow.svg"
-                                                    alt=""
-                                                    class="filter__form-select-arrow icon"
+                                        <div class="filter__form-group filter__form-group--inline">
+                                            <div>
+                                                <label for="" class="form__label form__label--small"> Minimum </label>
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    value="$30.000"
+                                                    class="filter__form-input"
                                                 />
                                             </div>
-
-                                            <div class="filter__form-select">
-                                                Gram
-                                                <img
-                                                    src="./assets/icons/select-arrow.svg"
-                                                    alt=""
-                                                    class="filter__form-select-arrow icon"
+                                            <div>
+                                                <label for="" class="form__label form__label--small"> Maximum </label>
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    value="$100.000"
+                                                    class="filter__form-input"
                                                 />
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="filter__form-group">
-                                        <div class="filter__form-tags">
-                                            <div class="filter__form-tag">Small</div>
-                                            <div class="filter__form-tag">Medium</div>
-                                            <div class="filter__form-tag">Large</div>
+                                    <div class="filter__separate"></div>
+
+                                    <!--Filter column 2  -->
+                                    <div class="filter__col">
+                                        <label for="" class="form__label">Size/Weight</label>
+                                        <div class="filter__form-group">
+                                            <div class="form__select-wrap">
+                                                <div class="form__select form__select-big">
+                                                    500g
+                                                    <img
+                                                        src="./assets/icons/select-arrow.svg"
+                                                        alt=""
+                                                        class="form__select-arrow icon"
+                                                    />
+                                                </div>
+
+                                                <div class="form__select">
+                                                    Gram
+                                                    <img
+                                                        src="./assets/icons/select-arrow.svg"
+                                                        alt=""
+                                                        class="form__select-arrow icon"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter__form-group">
+                                            <div class="form__tags">
+                                                <div class="form__tag">Small</div>
+                                                <div class="form__tag">Medium</div>
+                                                <div class="form__tag">Large</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__separate"></div>
+
+                                    <!--Filter column 3  -->
+                                    <div class="filter__col">
+                                        <label for="" class="form__label">Brand</label>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-text-input">
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    class="filter__form-input-search"
+                                                    placeholder="Search brand name"
+                                                />
+                                                <img
+                                                    src="./assets/icons/search.svg"
+                                                    alt=""
+                                                    class="filter__form-input-icon icon"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="filter__form-group">
+                                            <div class="form__tags">
+                                                <div class="form__tag">Lavazza</div>
+                                                <div class="form__tag">Nescafe</div>
+                                                <div class="form__tag">Starbucks</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="filter__separate"></div>
-
-                                <!--Filter column 3  -->
-                                <div class="filter__col">
-                                    <label for="" class="filter__form-label">Brand</label>
-                                    <div class="filter__form-group">
-                                        <div class="filter__form-text-input">
-                                            <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                class="filter__form-input-search"
-                                                placeholder="Search brand name"
-                                            />
-                                            <img
-                                                src="./assets/icons/search.svg"
-                                                alt=""
-                                                class="filter__form-input-icon icon"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="filter__form-group">
-                                        <div class="filter__form-tags">
-                                            <div class="filter__form-tag">Lavazza</div>
-                                            <div class="filter__form-tag">Nescafe</div>
-                                            <div class="filter__form-tag">Starbucks</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
 
                             <div class="filter__row filter__footer">
                                 <button class="btn btn--text filter__cancel js-toggle" toggle-target="#home-filter">
@@ -227,12 +225,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-col-4 row-col-lg-2 row-col-sm-1 gy-3">
+                <div class="row row-col-5 row-col-lg-2 row-col-sm-1 gy-3">
                     <!-- Product item 1-->
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-1.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -245,7 +243,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Coffee Beans - Espresso Arabica and Robusta Beans
                                 </a>
                             </h3>
@@ -261,7 +259,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-2.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -274,7 +272,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Lavazza Coffee Blends - Try the Italian Espresso
                                 </a>
                             </h3>
@@ -290,7 +288,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-3.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn product-item__btn--liked">
@@ -303,7 +301,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Lavazza - Caffè Espresso Black Tin - Ground coffee
                                 </a>
                             </h3>
@@ -319,7 +317,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-4.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -332,7 +330,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Lavazza - Coffee Espresso Black Tin - Ground coffee
                                 </a>
                             </h3>
@@ -348,7 +346,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-5.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -361,7 +359,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Costa Coffee - Espresso Arabica and Robusta Beans
                                 </a>
                             </h3>
@@ -377,7 +375,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-6.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -390,7 +388,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Peet's Coffee Coffee Blends - Try the Italian Espresso
                                 </a>
                             </h3>
@@ -406,7 +404,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-7.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn product-item__btn--liked">
@@ -419,7 +417,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Nescafe - Caffè Espresso Black Tin - Ground coffee
                                 </a>
                             </h3>
@@ -435,7 +433,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-8.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -448,7 +446,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Gloria Jean's - Coffee Espresso - Ground coffee
                                 </a>
                             </h3>
@@ -464,7 +462,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-9.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -477,7 +475,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Tim Horton's - Espresso Arabica and Robusta Beans
                                 </a>
                             </h3>
@@ -493,7 +491,7 @@
                     <div class="col">
                         <article class="product-item">
                             <figure class="product-item__media">
-                                <a href="#!">
+                                <a href="./product-detail.html">
                                     <img src="./assets/img/Products/item-10.png" alt="" class="product-item__img" />
                                 </a>
                                 <button class="product-item__btn">
@@ -506,7 +504,7 @@
                                 </button>
                             </figure>
                             <h3>
-                                <a href="#!" class="product-item__title">
+                                <a href="./product-detail.html" class="product-item__title">
                                     Dunkin Coffee Blends - Try the Italian Espresso
                                 </a>
                             </h3>
@@ -518,69 +516,10 @@
                             </div>
                         </article>
                     </div>
-                    <!-- Product item 11-->
-                    <div class="col">
-                        <article class="product-item">
-                            <figure class="product-item__media">
-                                <a href="#!">
-                                    <img src="./assets/img/Products/item-11.png" alt="" class="product-item__img" />
-                                </a>
-                                <button class="product-item__btn product-item__btn--liked">
-                                    <img src="./assets/icons/heart.svg" alt="" class="product-item__btn-icon icon" />
-                                    <img
-                                        src="./assets/icons/heart-red.svg"
-                                        alt=""
-                                        class="product-item__btn-icon--liked"
-                                    />
-                                </button>
-                            </figure>
-                            <h3>
-                                <a href="#!" class="product-item__title">
-                                    Patch Roast - Caffè Espresso Black Tin - Ground coffee
-                                </a>
-                            </h3>
-                            <p class="product-item__desc">TiKi</p>
-                            <div class="product-item__bottom">
-                                <span class="product-item__price">$99.99</span>
-                                <img src="./assets/icons/star.svg" alt="" class="product-item__star" />
-                                <span class="product-item__rating">5.0</span>
-                            </div>
-                        </article>
-                    </div>
-                    <!-- Product item 12-->
-                    <div class="col">
-                        <article class="product-item">
-                            <figure class="product-item__media">
-                                <a href="#!">
-                                    <img src="./assets/img/Products/item-12.png" alt="" class="product-item__img" />
-                                </a>
-                                <button class="product-item__btn">
-                                    <img src="./assets/icons/heart.svg" alt="" class="product-item__btn-icon icon" />
-                                    <img
-                                        src="./assets/icons/heart-red.svg"
-                                        alt=""
-                                        class="product-item__btn-icon--liked"
-                                    />
-                                </button>
-                            </figure>
-                            <h3>
-                                <a href="#!" class="product-item__title">
-                                    Classico - Coffee Espresso Black Tin - Ground coffee
-                                </a>
-                            </h3>
-                            <p class="product-item__desc">Shoppe</p>
-                            <div class="product-item__bottom">
-                                <span class="product-item__price">$38.65</span>
-                                <img src="./assets/icons/star.svg" alt="" class="product-item__star" />
-                                <span class="product-item__rating">4.4</span>
-                            </div>
-                        </article>
-                    </div>
                 </div>
             </section>
-            <!-- Footer -->
         </main>
-
+        <!-- Footer -->
         <footer id="footer" class="footer"></footer>
         <script>
             load("#footer", "./templates/footer.html");

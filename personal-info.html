@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal info | Grocery Mart</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/srcipts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+        <!-- MAIN -->
+        <main class="profile">
+            <div class="container">
+                <!-- Search bar -->
+                <div class="profile-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input type="text" name="" id="" placeholder="Search for item" class="search-bar__input" />
+                        <button class="search-bar__sumbit">
+                            <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Profile -->
+                <div class="profile-container">
+                    <div class="row gx-lg-2 row-col-md-1 gy-md-2">
+                        <div class="col-3 col-xl-4 d-lg-none">
+                            <aside class="profile__sidebar">
+                                <div class="profile-user">
+                                    <img
+                                        src="./assets/img/Products/product-review-01.jpg"
+                                        alt=""
+                                        class="profile-user__avatar"
+                                    />
+                                    <h1 class="profile-user__name">Imran Khan</h1>
+                                    <p class="profile-user__desc">Registered: 17th May 2022</p>
+                                </div>
+
+                                <!-- Menu 1 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">Manage Account</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="./personal-info.html" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/profile.svg" alt="" class="icon" />
+                                                </span>
+                                                Personal info
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/location.svg" alt="" class="icon" />
+                                                </span>
+                                                Addresses
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/message.svg" alt="" class="icon" />
+                                                </span>
+                                                Communications & privacy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu 2 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">My items</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/reorder.svg" alt="" class="icon" />
+                                                </span>
+                                                Reorder
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/heart.svg" alt="" class="icon" />
+                                                </span>
+                                                Lists
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/gift-small.svg" alt="" class="icon" />
+                                                </span>
+                                                Registries
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu 3 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">Subscriptions & plans</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/protection.svg" alt="" class="icon" />
+                                                </span>
+                                                Protection plans
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Menu 4 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">Customer Servicet</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/info.svg" alt="" class="icon" />
+                                                </span>
+                                                Help
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/danger.svg" alt="" class="icon" />
+                                                </span>
+                                                Terms of Use
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-9 col-xl-8 col-lg-12">
+                            <div class="cart-info">
+                                <div class="row gy-3 gy-md-2">
+                                    <div class="col-12">
+                                        <h2 class="cart-info__heading add-new-card__heading">
+                                            <a href="./profile.html" class="add-new-card__link">
+                                                <img
+                                                    src="./assets/icons/arrow-left.svg"
+                                                    alt=""
+                                                    class="icon add-new-card__icon"
+                                                />
+                                            </a>
+                                            Personal info
+                                        </h2>
+                                        <form action="" class="form">
+                                            <!-- Add form 1 -->
+                                            <div class="form__row">
+                                                <div class="form__group">
+                                                    <label for="first-name" class="form__label form__label--medium">
+                                                        Full name
+                                                    </label>
+                                                    <div class="form__text-input">
+                                                        <input
+                                                            type="text"
+                                                            name=""
+                                                            id="first-name"
+                                                            placeholder="Full name"
+                                                            class="form__input"
+                                                            required
+                                                            minlength="2"
+                                                            autofocus
+                                                        />
+
+                                                        <img
+                                                            src="./assets/icons/form-error.svg"
+                                                            alt=""
+                                                            class="form__icon-error"
+                                                        />
+                                                    </div>
+                                                    <p class="form__error">Name must be at least 2 characters long</p>
+                                                </div>
+                                                <div class="form__group">
+                                                    <label for="email-address" class="form__label form__label--medium">
+                                                        Email address
+                                                    </label>
+                                                    <div class="form__text-input">
+                                                        <input
+                                                            type="email"
+                                                            name=""
+                                                            id="email-address"
+                                                            placeholder="Email address"
+                                                            class="form__input"
+                                                            required
+                                                            minlength="6"
+                                                        />
+
+                                                        <img
+                                                            src="./assets/icons/form-error.svg"
+                                                            alt=""
+                                                            class="form__icon-error"
+                                                        />
+                                                    </div>
+                                                    <p class="form__error">Email must be at least 2 characters long</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Add form 2 -->
+                                            <div class="form__row">
+                                                <div class="form__group">
+                                                    <label for="card-number" class="form__label form__label--medium">
+                                                        Phone number
+                                                    </label>
+                                                    <div class="form__text-input">
+                                                        <input
+                                                            type="tel"
+                                                            name=""
+                                                            id="card-number"
+                                                            placeholder="Phone number"
+                                                            class="form__input"
+                                                            required
+                                                        />
+
+                                                        <img
+                                                            src="./assets/icons/form-error.svg"
+                                                            alt=""
+                                                            class="form__icon-error"
+                                                        />
+                                                    </div>
+                                                    <p class="form__error">Phone must be at least 10 characters long</p>
+                                                </div>
+                                                <div class="form__group">
+                                                    <label
+                                                        for="expiration-date"
+                                                        class="form__label form__label--medium"
+                                                    >
+                                                        Password
+                                                    </label>
+                                                    <div class="form__text-input">
+                                                        <input
+                                                            type="password"
+                                                            name=""
+                                                            id="expiration-date"
+                                                            placeholder="Password"
+                                                            class="form__input"
+                                                            required
+                                                            minlength="6"
+                                                        />
+
+                                                        <img
+                                                            src="./assets/icons/form-error.svg"
+                                                            alt=""
+                                                            class="form__icon-error"
+                                                        />
+                                                    </div>
+                                                    <p class="form__error">
+                                                        Password must be at least 6 characters long
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <div class="add-new-card__bottom">
+                                            <a href="./profile.html" class="btn btn--text">Cancel</a>
+                                            <button class="btn btn--primary btn--rounded add-new-card__btn">
+                                                Save Edit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Modal: Confirm remove shopping cart item -->
+        <div id="delete-confirm" class="modal modal--small hide">
+            <div class="modal__content">
+                <p class="modal__text">Are you sure you want to remove the product from your cart?</p>
+                <div class="modal__bottom">
+                    <button class="btn btn--text modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+                    <button
+                        class="btn--no-margin btn btn--danger btn--small modal__btn js-toggle"
+                        toggle-target="#delete-confirm"
+                    >
+                        Delete
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+        </div>
+    </body>
+</html>

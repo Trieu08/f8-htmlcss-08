@@ -1,0 +1,176 @@
+@use "../abstracts";
+
+.auth {
+    min-height: 100vh;
+
+    display: flex;
+
+    @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+    }
+
+    &__logo {
+        justify-content: center;
+        &-intro {
+            display: none;
+            @include abstracts.screen(md) {
+                display: flex;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+    &__heading {
+        margin-top: 50px;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 146.667%;
+        text-align: center;
+        color: var(--auth-text-color);
+
+        @include abstracts.screen(md) {
+            margin-top: 32px;
+            font-size: 2.2rem;
+        }
+    }
+
+    &__desc {
+        margin-top: 10px;
+        max-width: 460px;
+        color: #9a9a9a;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &-message {
+        margin-top: 30px;
+    }
+
+    &__form {
+        margin-top: 60px;
+        width: 100%;
+
+        &-forgot {
+            margin-top: 30px;
+        }
+
+        @include abstracts.screen(md) {
+            margin-top: 30px;
+        }
+    }
+
+    &__link {
+        color: #0071dc;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__btn-group {
+        margin-top: 50px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 30px !important;
+            gap: 20px;
+        }
+    }
+
+    &__btn {
+        margin-left: 0 !important;
+        color: var(--auth-text-btn-color);
+
+        &-icon {
+            margin-right: 10px;
+            filter: var(--auth-icon-color);
+        }
+    }
+
+    &__text {
+        margin-top: 100px;
+        color: #9e9da8;
+        font-size: 1.8rem;
+        line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            margin-top: 40px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.auth__intro {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
+    background: var(--auth-bg-color);
+
+    @include abstracts.screen(md) {
+        gap: 0;
+        padding: 80px 30px 50px;
+        background: var(--auth-intro-bg);
+    }
+
+    &-text {
+        max-width: 412px;
+        color: var(--auth-text-color);
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            margin-top: 50px;
+            font-size: 1.5rem;
+        }
+    }
+
+    &-img {
+        width: min(424px, 100%);
+    }
+
+    &-next {
+        margin-top: auto;
+    }
+}
+
+.auth__content {
+    flex: 1;
+    padding: 50px 30px;
+    background: var(--auth-content-bg);
+    &-inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: min(460px, 100%);
+        margin: 0 auto;
+    }
+
+    @include abstracts.screen(md) {
+        position: fixed;
+        inset: 0;
+        transition: transform 0.3s;
+        overflow-y: auto;
+        padding: 32px 30px;
+
+        &.hide {
+            transform: translateX(100%);
+        }
+    }
+}

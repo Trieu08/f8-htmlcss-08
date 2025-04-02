@@ -1,0 +1,107 @@
+@use "../abstracts";
+
+.payment-card {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    background: var(--bg-color);
+    // overflow: ;
+
+    @include abstracts.screen(lg) {
+        width: 280px;
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        pointer-events: none;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__type {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+    }
+
+    &__number {
+        position: relative;
+        margin-top: 37px;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    &__label {
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 175%;
+    }
+
+    &__value {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    &__circle {
+        position: relative;
+        margin-left: auto;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        &::after {
+            top: -14px;
+            right: 14px;
+            background: #f94545;
+            mix-blend-mode: hard-light;
+        }
+
+        &::before {
+            top: -14px;
+            right: 0;
+            background: #ffb700;
+        }
+    }
+}
+
+.new-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    width: 280px;
+    height: 100%;
+    min-height: 170.8px;
+    border-radius: 10px;
+    border: 1px dashed #d2d1d6;
+
+    &__text {
+        color: #d2d1d6;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+    }
+}
